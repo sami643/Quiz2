@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./validation1.css">
+    <script src="validation1.js"></script>
+</head>
+<body>
+
+    <form  class ="login" onsubmit="return false;" action="#">
+    <h1 class="heading">Login</h1>
+
+        <label for="name"> Name:</label>
+        <input type="text" id="name" onchange="checkName()" required>
+        <p id=name-err></p>
+        
+        <label for="email"> Email:</label>
+        <input type="email" id="email" required>
+        <p id="email-err"></p>
+
+        <label for="passwodr"> Password:</label>
+        <input type="password" id="password" onchange="checkPassword()" required>
+        <p id="password-err"></p>
+
+        <label for="password_password"> Confirm password:</label>
+        <input type="password" id="confirm-password" onchange="checkConfirmPassword()" required >
+        <p id="confirm-password-err"></p>
+
+        <button class="button" id="submit-form" type="submit" onclick="submit()"> <span>Submit</span>
+        </button>
+
+
+    </form>
+    </form>
+</body>
+</html>
